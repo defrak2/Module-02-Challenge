@@ -16,27 +16,68 @@
 
     <!--Create cards-->
     <section>
-      <!--1. About Me
-         a. paragraph
-    -->
-       <div class="section">About Me</div>
-       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos sint maiores. Ad, doloribus autem ex accusantium, minus dignissimos voluptatem laborum asperiores tenetur impedit molestias a. Distinctio, dignissimos facere corrupti ex quisquam aliquam nihil quod nesciunt eligendi fugiat sequi maxime?</p>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#about-me-paragraph">About Me</a>
+          <!-- Navigate to About Me -->
+        </li>
+        <li>
+          <a href="#images">Work</a>
+          <!-- Navigate to Work -->
+        </li>
+        <li>
+          <!-- Navigate to Contact Me -->
+          <a href="#email">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+<!--1. About Me
+a. paragraph
+-->
+       <div class="section">About Me
+        <div id="about-me-paragraph">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos sint maiores. Ad, doloribus autem ex accusantium, minus dignissimos voluptatem laborum asperiores tenetur impedit molestias a. Distinctio, dignissimos facere corrupti ex quisquam aliquam nihil quod nesciunt eligendi fugiat sequi maxime?</p>
+        </div>
+       </div>
+
     <!--
     2. Work (hover needed to contrast the images)
       a. first card 100% (image with explanation on left side of card)
       b. second-fifth cards= 50% (image with explanation on left side of card)
     -->
-      <div class="section">Work</div>
-        <div id="project-1">Project 1</div>
-        <div id="project-2">Project 2</div>
-        <div id="project-3">Project 3</div>
-        <div id="project-4">Project 4</div>
-        <div id="project-5">Project 5</div>
+      <section>
+        <div class="work-examples">
+          <h3>Work</h3>
+            <div class="card" id="project-1">Project 1</div>
+            <div class="card" id="project-2">Project 2
+              <img src="./assets/images/india-country-side.jpg" alt="India Countryside"/>
+            </div>
+            <div class="card" id="project-3">Project 3
+              <img src="assets/images/mantra.jpg" alt="Mantra"/>
+            </div>
+            <div class="card" id="project-4">Project 4
+              <img src="./assets/images/golden-temple.jpg" alt="Golden Temple"/>
+            </div>
+            <div class="card" id="project-5">Project 5
+              <img src="./assets/images/prayer-flags.jpg" alt="Prayer flags"/>
+            </div> 
+        </div>
+
+      </section>
+      
 <!--Contact Me-->
-      <div class="section">Contact Me</div>
-        <div id="email">defranciscok22@gmail.com</div>
-        <div id="github">Github Link</div>
-    </section>
+      <section>
+        <div class="contact-me">Contact Me
+          <div id="contact-banner">
+            <div id="email">defranciscok22@gmail.com</div>
+            <div id="github">Github Link
+            </div>
+          </div>
+        </div>
+      </section>
+
     <!--Footer-->
   </body>
 </html>
