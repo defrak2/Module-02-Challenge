@@ -37,61 +37,46 @@ h1 {
 nav ul a {
   text-decoration: ;
 }
-
-img {
-  max-width: 100px;
-}
 div {
-  display: flex;
+display: flex;
+align-items: center;
+
+}
+
+section {
+  flex-direction: row;
+}
+div.work-examples {
+
 }
 div.card {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%
+
 }
-div.project-1 {
+.project {
+  display: flex;
+  max-width: 50%;
+}
+.project#project-1 {
+  display: flex;
+  max-width: 100%;
+}
+div.content {
+  background-color: rgb(175, 175, 223);
+  position: absolute;
+}
+.content {
+  align-items: flex-end;
+}
+img {
+
+  min-width: 20%;
+  max-width: 50%;
+}
+img.responsive {
   width: 100%;
-  background-image: url("./../images/india-country-side.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px;
-}
-div.project-2 {
-  width: 50%;
-  background-image: url("./../images/india-country-side2.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px;
-
-}
-div.project-3 {
-  width: 50%;
-  background-image: url('./../images/mantra.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px;
-}
-div.project-4 {
-  width: 50%;
-  background-image: url('./../images/golden-temple.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px;
-}
-div.project-5 {
-  width: 50%;
-  background-image: url('./../images/prayer-flags.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px;
+  height: 100%;
 }
 
-@media (max-width: 886px) {
-
-  div.project-1 {
-    width: 50%;
-  }
-  div.card {
-    flex-direction: column;
-  }
-}
