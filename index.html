@@ -4,7 +4,8 @@
     <title>Kendra's Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale-1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
@@ -20,7 +21,7 @@
               <!-- Navigate to About Me -->
             </li>
             <li class="nav-item">
-              <a href="#images">Work</a>
+              <a href="#work">Work</a>
               <!-- Navigate to Work -->
             </li>
             <li class="nav-item">
@@ -40,7 +41,8 @@
 <!--1. About Me
 a. paragraph
 -->
-       <div class="section">About Me
+       <div class="about-me">
+        <h3>About Me</h3>
         <div id="about-me-paragraph">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos sint maiores. Ad, doloribus autem ex accusantium, minus dignissimos voluptatem laborum asperiores tenetur impedit molestias a. Distinctio, dignissimos facere corrupti ex quisquam aliquam nihil quod nesciunt eligendi fugiat sequi maxime?</p>
         </div>
@@ -51,48 +53,68 @@ a. paragraph
       a. first card 100% (image with explanation on left side of card)
       b. second-fifth cards= 50% (image with explanation on left side of card)
     -->
-      <section>
-        <div class="work-examples">
-          <h3>Work</h3>
+      <section class="work-examples" id="work">
+            <h3>Work</h3>
           <div class="card">
             <div class="project" id="project-1">
-              <img src="./assets/images/india-country-side2.jpg" alt="india country side"/>
+              <a href="https://www.google.com/">
+                <img src="./assets/images/india-country-side.jpg" alt="india country side" />
+              </a>
               <div class="content">
-                Project-1
+                <h4>
+                  Project 1
+                </h4>
+                <p>details</p>
               </div>
             </div>
             <div class="project">
-              <img src="./assets/images/india-country-side2.jpg" alt="india country side"/>
+              <a href="https://www.google.com/">
+                <img src="./assets/images/india-country-side.jpg" alt="india country side" />
+              </a>
               <div class="content">
-                Project 2
+                <h4>
+                  Project 2
+                </h4>
+                <p>details</p>
               </div>
             </div>
             <div class="project">
-              <img src="./assets/images/mantra.jpg" alt="mantra"/>
+              <a href="https://www.google.com/">
+                <img src="./assets/images/india-country-side.jpg" alt="india country side" />
+              </a>
               <div class="content">
-                Project 3
+                <h4>Project 3</h4>
+                <p>details</p>
               </div>
             </div>
             <div class="project">
-              <img src="./assets/images/golden-temple.jpg" alt="golden temple"/>
+              <a href="https://www.google.com/">
+                <img src="./assets/images/india-country-side.jpg" alt="india country side" />
+              </a>
               <div class="content">
-                Project 4
+                <h4>Project 4</h4>
+                <p>details</p>
               </div>
             </div>
             <div class="project">
-              <img src="./assets/images/prayer-flags.jpg" alt="prayer flags"/>
+              <a href="https://www.google.com/">
+                <img src="./assets/images/india-country-side.jpg" alt="india country side" />
+              </a>
               <div class="content">
-                Project 5
+                <h4>Project 4</h4>
+                <p>details</p>
               </div>
             </div> 
           </div>
-        </div>
 
       </section>
       
 <!--Contact Me-->
       <section>
-        <div class="contact-me">Contact Me
+        <div class="contact-me">
+          <h3>
+            Contact Me
+          </h3>
           <div id="contact-banner">
             <div id="email">defranciscok22@gmail.com</div>
             <div id="github">Github Link
