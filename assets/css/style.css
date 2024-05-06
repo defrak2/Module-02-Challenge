@@ -8,12 +8,12 @@ section {
   flex-direction: column;
 }
 h3 {
-  padding: 7%;
-  display: flex;
+  padding: 2%;
+  display: inline;
   color:rgb(40, 63, 51);
   max-width: 20%;
   min-width: 20%;
-
+  text-align: center;
 }
 
 h4 {
@@ -51,6 +51,17 @@ h1 {
   font-size: 150%;
   color:rgb(114, 177, 142);
 }
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+img.avatar {
+  max-width: 15rem;
+  min-width: 15rem;
+  display: flex;
+
+}
 nav {
   display: flex;
   align-items: center;
@@ -59,14 +70,13 @@ nav {
 }
 ul {
   display: flex;
+  flex-direction: row;
   list-style-type: none;
   height: 100%;
   width: 100%;
   gap: 2rem;
-  margin-top: 0;
-  margin-bottom: 0;
   padding: 0 20px 0 0;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -92,6 +102,8 @@ section.about-me {
   border-left: rgb(114, 177, 142) 5px solid;
   margin-bottom: 2%;
 }
+
+
 /*----Work Section*/
 
 section.work-examples {
@@ -102,14 +114,12 @@ justify-content: flex-start;
 position: relative;
 }
 
-
 .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 3rem;
   padding: 7%;
-;
   border-left:rgb(114, 177, 142) 5px solid;
   margin-bottom: 2%;
 }
@@ -120,7 +130,6 @@ position: relative;
   max-width: 45%;
 }
 #project-1 {
-  max-height: 8rem;
   display: flex;
   max-width: 95%;
   min-width: 90%;
@@ -171,19 +180,14 @@ position: relative;
   justify-content: center;
 }
 
-
-
-
 a:hover {
   transition: .2s;
   filter:brightness(100%);
 }
 
-@media screen and (max-width:768px) {
-  
+@media screen and (max-width:1024px) {
+
   nav {
-    height: 60%;
-    width: 100%;
     justify-content: center;
   }
   nav ul {
@@ -198,21 +202,64 @@ a:hover {
   }
   .header {
     flex-direction: column;
-    height: 18em;
     align-content:center;
     justify-content:center;
+    height: 100%;
   }
+
   h1 {
-    height: 20%;
-    padding-bottom: 2em;
     margin-left: 0;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  img.avatar {
+    display: flex;
+    max-width: 30%;
+    min-width: 30%;
     justify-content: center;
   }
 
-@media screen and (max-width:1024px) {
   .project {
     max-width: 95%;
-  min-width: 90%;}
-  .header {
+    min-width: 90%;
+  }
+
+}
+@media screen and (max-width:768px) {
+  section.about-me {
+    flex-direction: column;
+  }
+  #about-me-paragraph{
+    border-left: none;
+    border-bottom:rgb(114, 177, 142) 5px solid;
+    margin: 2%;
+  }
+  section.work-examples {
+    flex-direction: column;
+  }
+  .card {
+    border-left: none;
+    border-bottom:rgb(114, 177, 142) 5px solid;
+    margin: 2%;
+  }
+
+  section.contact {
+    flex-direction: column;
+  }
+  
+  ul {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  h3 {
+    padding: 5%;
+    max-width: 100%;
+
   }
 }
+  
