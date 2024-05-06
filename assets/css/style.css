@@ -4,7 +4,6 @@ body {
   flex-direction: column;
 }
 section {
-  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -12,10 +11,8 @@ h3 {
   padding: 7%;
   display: flex;
   color:rgb(40, 63, 51);
-  position: absolute;
-  top: 0%;
-  max-height: 500px;
-  width: 235px;
+  max-width: 20%;
+  min-width: 20%;
 
 }
 
@@ -24,6 +21,10 @@ h4 {
 }
 p {
   color:rgb(40, 63, 51);
+}
+
+section {
+  display: flex;
 }
 
 /*-----Header/Nav Bar-----*/
@@ -53,18 +54,20 @@ h1 {
 nav {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: flex-end;
 }
-nav ul {
+ul {
   display: flex;
   list-style-type: none;
   height: 100%;
-  width: 300px;
-  align-items: center;
-  margin-right: 40px;
+  width: 100%;
+  gap: 2rem;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0 0 0 0;
-  justify-content: space-between;
+  padding: 0 20px 0 0;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 a {
@@ -75,21 +78,23 @@ a {
   color:rgb(114, 177, 142);
 }
 /*----About-Me-Section----*/
-.about-me {
+section.about-me {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   position: relative;
   
 }
 #about-me-paragraph {
   align-content: center;
   padding: 7%;
-  margin-left: 30%;
   border-left: rgb(114, 177, 142) 5px solid;
   margin-bottom: 2%;
 }
 /*----Work Section*/
 
-.work-examples {
+section.work-examples {
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -97,17 +102,14 @@ justify-content: flex-start;
 position: relative;
 }
 
-.work-examples ~ div {
-  display: flex;
 
-}
 .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 3rem;
-  padding: 1.5%;
-  margin-left: 30%;
+  padding: 7%;
+;
   border-left:rgb(114, 177, 142) 5px solid;
   margin-bottom: 2%;
 }
@@ -144,30 +146,33 @@ img {
   object-fit: cover;
 }
 
-/**/
+/*Contact Section*/
+section.contact {
+  display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+position: relative;
+}
 .contact-me {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 30%;
-  position: relative;
-  height: 200px;
+  height: 12.5rem;
+  width: 100%;
 }
-#contact-banner {
+
+.contact-banner {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  position: absolute;
   padding: 7%;
-  max-width: 100%;
   border-left:rgb(114, 177, 142) 5px solid;
-
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
-.contact {
-  position: absolute;
-  left: 0%;
 
-}
+
+
 
 a:hover {
   transition: .2s;
@@ -178,7 +183,8 @@ a:hover {
   
   nav {
     height: 60%;
-    width: 50%;
+    width: 100%;
+    justify-content: center;
   }
   nav ul {
     flex-direction:column;
