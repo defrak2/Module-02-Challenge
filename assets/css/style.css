@@ -54,7 +54,7 @@ header {
 }
 
 .header-title {
-  padding: 2%;
+  padding: 2% 2% 2% 0%;
   display: flex;
   min-height: 100%;
   max-height: 100%;
@@ -67,8 +67,11 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 200%;
-
-  color: rgb(114, 177, 142);
+  padding: 5%;
+  color:aliceblue;
+  background-color: rgb(114, 177, 142);
+  filter: brightness(70%);
+  border-radius: 5px;
 }
 
 .image-container {
@@ -81,7 +84,7 @@ img.avatar {
   max-width: 15rem;
   min-width: 15rem;
   display: flex;
-
+  filter: brightness(80%);
 }
 
 nav {
@@ -253,7 +256,7 @@ a:hover {
   }
 
   nav ul {
-    flex-direction: column;
+
     margin-right: 0;
   }
 
@@ -264,10 +267,8 @@ a:hover {
   }
 
   .header-bar {
-    flex-direction: column;
     align-content: center;
     justify-content: center;
-    height: 100%;
   }
 
   h1 {
@@ -275,19 +276,6 @@ a:hover {
     display: inline;
     text-align: center;
     font-size: 175%;
-  }
-
-  .image-container {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-  }
-
-  img.avatar {
-    display: flex;
-    max-width: 30%;
-    min-width: 30%;
-    justify-content: center;
   }
 
   .project {
@@ -299,6 +287,25 @@ a:hover {
 
 /*Media Query for Mobile*/
 @media screen and (max-width:768px) {
+  header {
+    height: 30em;
+    justify-content: center;
+  }
+  .header-bar {
+    flex-direction: column;
+    max-height: 10%;
+    min-height: 10%;
+    justify-content: space-between;
+  }
+  .header-title {
+    padding-left: 2%;
+  }
+  nav {
+    flex-direction: flex-end;
+  }
+  ul {
+    padding-top: 2%;
+  }
   section.about-me {
     flex-direction: column;
   }
