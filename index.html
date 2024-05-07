@@ -5,16 +5,21 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <!--Create Header-->
-
+  <!--Header Section-->
     <header>
-      <div class="header">
-        <h1>Kendra's Portfolio</h1>
+      <div class="header-bar">
+        <div class="header-title">
+            <h1>Kendra's Portfolio</h1>
+        </div>
+
         <div class="image-container">
-          <img src="./assets/images/golden-temple.jpg" alt="avatar"
+          <img src="./assets/images/avatar.jpeg" alt="avatar"
             class="avatar">
         </div>
 
@@ -22,29 +27,22 @@
           <ul>
             <li class="nav-item">
               <a href="#about-me-paragraph">About Me</a>
-              <!-- Navigate to About Me -->
             </li>
             <li class="nav-item">
               <a href="#work">Work</a>
-              <!-- Navigate to Work -->
             </li>
             <li class="nav-item">
-              <!-- Navigate to Contact Me -->
-              <a href="#email">Contact Me</a>
+              <a href="#contact-me">Contact Me</a>
             </li>
           </ul>
         </nav>
-      </div>
-      <div>
-        <!--Insert Subtitle and background image here-->
-      </div>
-    </header>
-
-    <!--Create cards-->
+    </header>        
+<!--Hero Section-->
+    <hero>
+      <img src="./assets/images/web-development.jpg" alt="Programming Image" id="programming-image">
+    </hero>
     <section>
-      <!--1. About Me
-a. paragraph
--->
+<!--About Me Section-->
       <section class="about-me">
         <h3>About Me</h3>
         <div id="about-me-paragraph">
@@ -56,24 +54,19 @@ a. paragraph
         </div>
       </section>
 
-      <!--
-    2. Work (hover needed to contrast the images)
-      a. first card 100% (image with explanation on left side of card)
-      b. second-fifth cards= 50% (image with explanation on left side of card)
-    -->
+<!--Work Section-->
       <section class="work-examples" id="work">
         <h3>Work</h3>
         <div class="card">
           <div class="project" id="project-1">
-            <a href="https://www.google.com/">
-              <img src="./assets/images/india-country-side.jpg"
-                alt="india country side" class="image" />
+            <a href="https://defrak2.github.io/Module-01-Challenge/">
+              <img src="./assets/images/horiseon.png" class="image" />
             </a>
             <div class="content">
               <h4>
-                Project 1
+                Horiseon
               </h4>
-              <p>details</p>
+              <p>Basic HTML and CSS</p>
             </div>
           </div>
           <div class="project">
@@ -85,63 +78,63 @@ a. paragraph
               <h4>
                 Project 2
               </h4>
-              <p>details</p>
+              <p>Coming Soon</p>
             </div>
           </div>
           <div class="project">
             <a href="https://www.google.com/">
-              <img src="./assets/images/india-country-side.jpg"
-                alt="india country side" />
+              <img src="./assets/images/mantra.jpg"
+                alt="mantra" />
             </a>
             <div class="content">
               <h4>Project 3</h4>
-              <p>details</p>
+              <p>Coming Soon</p>
             </div>
           </div>
           <div class="project">
             <a href="https://www.google.com/">
-              <img src="./assets/images/india-country-side.jpg"
-                alt="india country side" />
+              <img src="./assets/images/golden-temple.jpg"
+                alt="golden-temple" />
             </a>
             <div class="content">
               <h4>Project 4</h4>
-              <p>details</p>
+              <p>Coming Soon</p>
             </div>
           </div>
           <div class="project">
             <a href="https://www.google.com/">
-              <img src="./assets/images/india-country-side.jpg"
-                alt="india country side" />
+              <img src="./assets/images/prayer-flags.jpg"
+                alt="prayer-flags" />
             </a>
             <div class="content">
               <h4>Project 4</h4>
-              <p>details</p>
+              <p>Coming Soon</p>
             </div>
           </div>
         </div>
 
       </section>
-
-      <!--Contact Me-->
+<!--Contact Me Section-->
       <section class="contact">
         <h3>
           Contact Me
         </h3>
-
-        <div class="contact-banner">
+        <div class="contact-banner" id="contact-me">
           <ul>
             <li>
-              <a href="defranciscok22@gmail.com">defranciscok22@gmail.com</a>
+              <a href="mailto:defranciscok22@gmail.com">Email</a>
             </li>
             <li>
-              <a href="github.com">Github Link</a>
+              <a href="https://github.com/defrak2">Github</a>
+            </li>            
+            <li>
+              <a href="https://www.linkedin.com/in/kendra-defrancisco-772439214/">LinkedIn</a>
             </li>
           </ul>
-
         </div>
       </div>
     </section>
 
-    <!--Footer-->
+<!--Footer Section-->
   </body>
 </html>

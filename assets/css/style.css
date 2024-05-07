@@ -1,7 +1,8 @@
+
 body {
   background-color: rgb(220, 231, 238);
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  font-family: Playfair Display, serif;
 }
 section {
   display: flex;
@@ -14,13 +15,18 @@ h3 {
   max-width: 20%;
   min-width: 20%;
   text-align: center;
+  font-size: 150%;
 }
 
 h4 {
-  color:rgb(40, 63, 51)
+  color:rgb(40, 63, 51);
+  line-height: 1.5em;
+  font-size: 125%;
 }
 p {
   color:rgb(40, 63, 51);
+  font-size: 100%;
+  line-height: 1.5em;
 }
 
 section {
@@ -31,30 +37,35 @@ section {
 header {
   display: flex;
   background-color: rgba(0, 0, 0, 0.685);
-  justify-content: space-between;
-  width: 100%;
-  flex-direction:column;
+  flex-direction: row;
 }
 
-.header {
+.header-bar {
   display: flex;
-  justify-content: space-between;
   height: 9.3em;
+  width: 100%;
+  justify-content: space-between;
+}
+.header-title {
+  padding: 2%;
+  display: flex;
+  min-height: 100%;
+  max-height: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 h1 {
   display: flex;
-  height: 100%;
-  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 40px;
-  font-size: 150%;
+  font-size: 200%;
+
   color:rgb(114, 177, 142);
 }
 .image-container {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 2%;
 }
 img.avatar {
   max-width: 15rem;
@@ -75,8 +86,8 @@ ul {
   height: 100%;
   width: 100%;
   gap: 2rem;
-  padding: 0 20px 0 0;
-  justify-content: center;
+  padding: 7%;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -87,6 +98,19 @@ a {
   text-decoration-thickness: .2rem;
   color:rgb(114, 177, 142);
 }
+
+/*Hero Section*/
+hero {
+  max-height: 10em;
+  display: flex;
+}
+hero.img {
+  height: 100%;
+}
+img#programming-image {
+  border: none;
+}
+
 /*----About-Me-Section----*/
 section.about-me {
   display: flex;
@@ -149,6 +173,7 @@ a {
 }
 img {
   border: rgb(114, 177, 142) 4px solid;
+  border-radius: 5px;
   max-height: 100%;
   max-width: 100%;
   min-width: 100%;
@@ -173,7 +198,7 @@ position: relative;
 .contact-banner {
   display: flex;
   flex-direction: row;
-  padding: 7%;
+
   border-left:rgb(114, 177, 142) 5px solid;
   align-items: center;
   width: 100%;
@@ -200,7 +225,8 @@ a:hover {
     justify-content: center;
     padding-bottom: 2em;
   }
-  .header {
+
+  .header-bar {
     flex-direction: column;
     align-content:center;
     justify-content:center;
@@ -208,9 +234,10 @@ a:hover {
   }
 
   h1 {
-    margin-left: 0;
-    justify-content: center;
-    margin-top: 2rem;
+    padding: 2%;
+    display: inline;
+    text-align: center;
+    font-size: 175%;
   }
   .image-container {
     display: flex;
@@ -254,7 +281,6 @@ a:hover {
   
   ul {
     flex-direction: column;
-    padding-right: 0;
   }
   h3 {
     padding: 5%;
