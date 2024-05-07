@@ -1,17 +1,19 @@
-
 body {
   background-color: rgb(220, 231, 238);
   display: flex;
-  flex-direction: column;  font-family: Playfair Display, serif;
+  flex-direction: column;
+  font-family: Playfair Display, serif;
 }
+
 section {
   display: flex;
   flex-direction: column;
 }
+
 h3 {
   padding: 2%;
   display: inline;
-  color:rgb(40, 63, 51);
+  color: rgb(40, 63, 51);
   max-width: 20%;
   min-width: 20%;
   text-align: center;
@@ -19,14 +21,18 @@ h3 {
 }
 
 h4 {
-  color:rgb(40, 63, 51);
+  color: rgb(40, 63, 51);
   line-height: 1.5em;
   font-size: 125%;
+  padding: 2%;
 }
+
 p {
-  color:rgb(40, 63, 51);
+  display: block;
+  color: rgb(40, 63, 51);
   font-size: 100%;
   line-height: 1.5em;
+  padding: 2%;
 }
 
 section {
@@ -46,6 +52,7 @@ header {
   width: 100%;
   justify-content: space-between;
 }
+
 .header-title {
   padding: 2%;
   display: flex;
@@ -54,31 +61,36 @@ header {
   align-items: center;
   justify-content: space-around;
 }
+
 h1 {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 200%;
 
-  color:rgb(114, 177, 142);
+  color: rgb(114, 177, 142);
 }
+
 .image-container {
   display: flex;
   justify-content: center;
   padding: 2%;
 }
+
 img.avatar {
   max-width: 15rem;
   min-width: 15rem;
   display: flex;
 
 }
+
 nav {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: flex-end;
 }
+
 ul {
   display: flex;
   flex-direction: row;
@@ -96,19 +108,32 @@ a {
   text-underline-offset: 1rem;
   font-weight: bolder;
   text-decoration-thickness: .2rem;
-  color:rgb(114, 177, 142);
+  color: rgb(114, 177, 142);
 }
 
 /*Hero Section*/
 hero {
   max-height: 10em;
   display: flex;
+  position: relative;
 }
+
 hero.img {
   height: 100%;
 }
+
 img#programming-image {
   border: none;
+
+}
+
+#subtitle {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  gap: 1rem;
+  background-color: rgb(114, 177, 142);
+  border-radius: 5px;
 }
 
 /*----About-Me-Section----*/
@@ -118,24 +143,26 @@ section.about-me {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  
+
 }
+
 #about-me-paragraph {
   align-content: center;
-  padding: 7%;
+  padding: 3%;
   border-left: rgb(114, 177, 142) 5px solid;
   margin-bottom: 2%;
+  max-width: 50rem;
 }
 
 
 /*----Work Section*/
 
 section.work-examples {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: flex-start;
-position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
 }
 
 .card {
@@ -144,15 +171,17 @@ position: relative;
   justify-content: flex-start;
   gap: 3rem;
   padding: 7%;
-  border-left:rgb(114, 177, 142) 5px solid;
+  border-left: rgb(114, 177, 142) 5px solid;
   margin-bottom: 2%;
 }
+
 .project {
   display: flex;
   position: relative;
   max-height: 8rem;
   max-width: 45%;
 }
+
 #project-1 {
   display: flex;
   max-width: 95%;
@@ -164,13 +193,17 @@ position: relative;
   bottom: 15%;
   gap: 1rem;
   background-color: rgb(114, 177, 142);
+  min-width: 35%;
+  border-radius: 5px;
 }
+
 a {
   max-height: 100%;
   max-width: 100%;
   min-width: 100%;
-  filter:brightness(70%);
+  filter: brightness(70%);
 }
+
 img {
   border: rgb(114, 177, 142) 4px solid;
   border-radius: 5px;
@@ -183,11 +216,12 @@ img {
 /*Contact Section*/
 section.contact {
   display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: flex-start;
-position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
 }
+
 .contact-me {
   display: flex;
   flex-direction: row;
@@ -199,24 +233,27 @@ position: relative;
   display: flex;
   flex-direction: row;
 
-  border-left:rgb(114, 177, 142) 5px solid;
+  border-left: rgb(114, 177, 142) 5px solid;
   align-items: center;
   width: 100%;
   justify-content: center;
 }
 
+/*Psuedo Elements and Classes*/
 a:hover {
   transition: .2s;
-  filter:brightness(100%);
+  filter: brightness(100%);
 }
 
+/*Media Query for Tablet*/
 @media screen and (max-width:1024px) {
 
   nav {
     justify-content: center;
   }
+
   nav ul {
-    flex-direction:column;
+    flex-direction: column;
     margin-right: 0;
   }
 
@@ -228,8 +265,8 @@ a:hover {
 
   .header-bar {
     flex-direction: column;
-    align-content:center;
-    justify-content:center;
+    align-content: center;
+    justify-content: center;
     height: 100%;
   }
 
@@ -239,11 +276,13 @@ a:hover {
     text-align: center;
     font-size: 175%;
   }
+
   .image-container {
     display: flex;
     justify-content: center;
     padding: 2rem;
   }
+
   img.avatar {
     display: flex;
     max-width: 30%;
@@ -257,35 +296,40 @@ a:hover {
   }
 
 }
+
+/*Media Query for Mobile*/
 @media screen and (max-width:768px) {
   section.about-me {
     flex-direction: column;
   }
-  #about-me-paragraph{
+
+  #about-me-paragraph {
     border-left: none;
-    border-bottom:rgb(114, 177, 142) 5px solid;
+    border-bottom: rgb(114, 177, 142) 5px solid;
     margin: 2%;
   }
+
   section.work-examples {
     flex-direction: column;
   }
+
   .card {
     border-left: none;
-    border-bottom:rgb(114, 177, 142) 5px solid;
+    border-bottom: rgb(114, 177, 142) 5px solid;
     margin: 2%;
   }
 
   section.contact {
     flex-direction: column;
   }
-  
+
   ul {
     flex-direction: column;
   }
+
   h3 {
     padding: 5%;
     max-width: 100%;
 
   }
 }
-  
