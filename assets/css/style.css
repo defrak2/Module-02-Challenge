@@ -329,7 +329,9 @@ a:hover {
   section.contact {
     flex-direction: column;
   }
-
+  #contact-me {
+    border: none;
+  }
   ul {
     flex-direction: column;
   }
