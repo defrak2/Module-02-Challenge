@@ -154,9 +154,13 @@ section.about-me {
   padding: 3%;
   border-left: rgb(114, 177, 142) 5px solid;
   margin-bottom: 2%;
-  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
 }
-
+#about-me-paragraph p {
+  font-size: 110%;
+  text-align: center;
+}
 
 /*----Work Section*/
 
@@ -171,7 +175,7 @@ section.work-examples {
 .card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 3rem;
   padding: 7%;
   border-left: rgb(114, 177, 142) 5px solid;
@@ -183,12 +187,13 @@ section.work-examples {
   position: relative;
   max-height: 8rem;
   max-width: 45%;
+  min-width: 45%;
 }
 
 #project-1 {
   display: flex;
   max-width: 95%;
-  min-width: 90%;
+  min-width: 94%;
   max-height: 16rem;
   
 }
